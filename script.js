@@ -130,7 +130,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
     // Form validation
     let nam = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
-    let message = document.getElementById("message").value.trim();
+    let message1 = document.getElementById("message1").value.trim();
     const emailPattern = /^[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|outlook\.com)$/;
 
     if (nam === "" || nam.length < 2) {
@@ -143,7 +143,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
         return false;
     }
 
-    if (message === "" || message.length < 2) {
+    if (message1 === "" || message1.length < 2) {
         alert("Please enter your message.");
         return false;
     }
@@ -151,3 +151,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
     // Redirect to another HTML file after validation is successful
     window.location.href = "contactonsb.html";
 });
+
+
+
+
