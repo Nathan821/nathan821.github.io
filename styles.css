@@ -690,7 +690,7 @@ background: linear-gradient(145deg, #8e277f , #561282, #0e1446);
     }
 }
 
-
+#btnt
 
 
 
@@ -999,7 +999,7 @@ color: #dcdcdc;
 }
 
 #btnt{
-    margin-top: 23px;
+    margin-top: 14px;
 }
 
 #git{
@@ -1015,4 +1015,9 @@ width: 20px;
 #a1{
     text-decoration: none;
     color: #fff;
+}
+
+.fa fa-download{
+    color: #fff;
+
 }
