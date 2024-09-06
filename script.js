@@ -1,5 +1,4 @@
-//main js file
-
+/*Main Js*/
 
 document.querySelector('.burger').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('active');
@@ -14,7 +13,6 @@ window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     const scrollPosition = window.scrollY + window.innerHeight;
 
-    
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         nav.classList.add('hidden');
@@ -23,7 +21,6 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTop = scrollTop;
 
-    
     sections.forEach(section => {
         if (scrollPosition > section.offsetTop + 100) {
             section.classList.add('visible');
@@ -116,18 +113,33 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+
 window.onload = function() {
-    document.getElementById("form").reset();
+    // Reset the form
+    const form = document.getElementById("form");
+    if (form) {
+        form.reset();
+    }
+    
+
+    const ken = document.getElementById("ken");
+    if (ken) {
+        ken.innerHTML = new Date().getFullYear();
+    }
+
+    const alertBox = document.getElementById('customAlert');
+    alertBox.style.display = 'block'; 
+
+
+    setTimeout(function() {
+        alertBox.style.display = 'none';
+    }, 3500);
 };
 
-let ken = document.getElementById("ken");//current year
-ken.innerHTML = new Date().getFullYear();
-
-
 document.getElementById("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevents the default form submission
+    event.preventDefault(); 
 
-    // Form validation
+
     let nam = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
     let message1 = document.getElementById("message1").value.trim();
@@ -148,10 +160,6 @@ document.getElementById("form").addEventListener("submit", function(event) {
         return false;
     }
 
-    // Redirect to another HTML file after validation is successful
+
     window.location.href = "contactonsb.html";
 });
-
-
-
-

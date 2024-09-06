@@ -1022,3 +1022,68 @@ width: 20px;
 
 }
 
+
+/*Alert Message*/
+.alert {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(145deg, #ff00d9 , #9900ff, #001aff);
+    font-family: Poppins, sans-serif, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease, fadeOut 0.5s ease 3s;
+    align-items: center;
+    z-index: 2000;
+    padding: 15px;
+    font-weight: 600;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+#imgalert{
+    width: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+#imgalert img{
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Animation for the alert box */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top: 0;
+    }
+    to {
+        opacity: 1;
+        top: 20px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        top: 20px;
+    }
+    to {
+        opacity: 0;
+        top: 0;
+    }
+}
+
