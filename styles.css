@@ -750,6 +750,7 @@ border-right: 1px solid rgba(255, 255, 255, 0.9);
     font-size: 28px;
     color: #ffffff;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .contact-details p {
@@ -792,17 +793,21 @@ border-right: 1px solid rgba(255, 255, 255, 0.9);
 .contact-form {
     flex: 1;
     padding: 20px;
+    text-align: center;
 }
 
 .contact-form h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #fffcfc;
+    color: #ffffff;
+    text-align: center;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    text-align: center;
 }
 
 .contact-form input,
@@ -1087,3 +1092,6 @@ width: 20px;
     }
 }
 
+#conH1{
+    margin-bottom: 35px;
+}
